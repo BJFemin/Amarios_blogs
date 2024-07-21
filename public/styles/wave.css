@@ -1,0 +1,77 @@
+
+section
+{
+  position: absolute;
+  bottom: 0;
+  height: 220px;
+  width: 100%;
+  background-color: #3586ff;
+}
+.wave-action
+{
+  position: relative;
+
+}
+.wave
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: url(wave.png) ;
+  background-size: 1000px 70px;
+}
+section .wave2
+{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  top: 0;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position: 1000px;
+  }
+}
+section .wave3
+{
+  animation: animate 30s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -3s;
+  top: 20px;
+}
+section .wave4
+{
+  animation: animate 30s linear infinite;
+  z-index: 97;
+  opacity: 0.2;
+  animation-delay: -6s;
+  top: 40px;
+}
+.icons
+{
+  z-index: 1111;
+}
+.display
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.display i
+{
+   color:white;
+   font-size: 30px;
+   margin-right: 20px;
+}

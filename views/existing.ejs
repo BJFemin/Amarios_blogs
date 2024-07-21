@@ -1,0 +1,31 @@
+<style>
+body
+{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.exist
+{
+  margin-top: 100px;
+  margin-left: 300px;
+}
+</style>
+<%- include("partials/header.ejs") %>
+
+
+<body>
+  <div class="exist">
+  <h1>Existing Blogs</h1>
+  <ul>
+      <% blogs.forEach(blog => { %>
+          <li><a href="<%= blog.link %>"><%= blog.title %></a></li>
+      <% }) %>
+  </ul>
+</div>
+</body>
+
+
+
+
+<%- include("partials/footer.ejs") %>

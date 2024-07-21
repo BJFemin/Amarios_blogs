@@ -1,0 +1,43 @@
+<style>
+  body
+  {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .cont
+  {
+    height: 100%;
+    width: 100%;
+  }
+  .head
+  {
+    margin-top: 100px;
+    margin-left: 700px;
+    color: #3586ff;
+  }
+  .aboutcontent
+  {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+</style>
+<%- include("partials/header.ejs") %>
+<body>
+<div class="cont">
+  <h1 class="head">About Me</h1>
+  <div class="aboutcontent">
+    <p>Welcome to my corner of the internet.I'm a passionate web developer with a keen interest in creating dynamic and engaging websites. My journey into web development began with a curiosity about how websites work, which quickly turned into a full-blown passion. Over the years, I've honed my skills in HTML, CSS, JavaScript, and various other technologies to build projects that I am proud of.</p>
+    <h2>My Projects</h2>
+    <ul>
+      <li><strong>Cinephile</strong>: A platform for movie enthusiasts to explore and review films.</li>
+      <li><strong>The Simon Game</strong>: A fun and interactive game built using HTML, CSS, and jQuery.</li>
+      <li><strong>QR Code Generator</strong>: A Node.js application that generates QR codes for any given URL.</li>
+      <li><strong>Movie Review Website</strong>: A site where I share my movie reviews, using HTML, CSS, and jQuery.</li>
+      <li><strong>Band Name Generator</strong>: A creative tool built with Node.js, EJS, and Express.js to generate unique band names.</li>
+      <li><strong>Amario's Website</strong>: A blogging platform where users can create and share blog posts.</li>
+  </ul>
+  </div>
+</div>
+</body>
+<%- include("partials/footer.ejs") %>

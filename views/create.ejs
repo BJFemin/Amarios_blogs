@@ -1,0 +1,91 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kode+Mono:wght@400..700&family=Sen:wght@400..800&display=swap');
+body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.boxes
+{
+  margin-top : 80px;
+  margin-left: 400px;
+}
+label{
+  font-size: 25px;
+  font-family: "Sen";
+  font-weight: 600;
+  color: #07234d;
+}
+#input1
+{
+  height: 40px;
+  width: 700px;
+  margin-top: 15px;
+  resize: none;
+  padding: 5px;
+  margin-bottom: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Sen";
+}
+#textarea
+{
+  margin-top: 15px;
+  resize: none;
+  width: 700px;
+  padding: 10px;
+  height: 180px;
+  width: 700px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Sen";
+}
+#input1:focus
+{
+  border: 3px solid #3586ff;
+}
+#textarea:focus
+{
+  border: 3px solid #3586ff;
+}
+.create
+{
+  height: 40px;
+  width: 80px;
+  background-color: #3586ff;
+  border:none;
+  color: white;
+  font-family: "Sen";
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+</style>
+<%- include("partials/header.ejs") %>
+<body>
+  <div class="boxes">
+    <form action="/create" method="post">
+      <label class="first" for="input1">
+        Title :
+      </label>
+      <br>
+      <input id="input1" type="text" name="input1" required>
+      <br>
+      <label class="second" for="textarea">
+        Blog Content :
+      </label>
+      <br>
+      <textarea id="textarea" name="textarea" required></textarea>
+      <br>
+      <input class="create" name="action" type="submit" value="CREATE">
+    </form>
+  </div>
+</body>
+<%- include("partials/footer.ejs") %>

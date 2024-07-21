@@ -1,0 +1,61 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kode+Mono:wght@400..700&family=Sen:wght@400..800&display=swap');
+body
+{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container
+{
+  margin-top: -40px;
+  margin-left: 380px;
+  height: 40%;
+  width: 50%;
+}
+.head
+{
+  color: #3586ff;
+  font-size: 60px;
+  font-family: system-ui, -apple-system;
+}
+.blog
+{
+  padding:10px;
+  border: none;
+  color: white;
+  background-color: #3586ff;
+  font-family: "Sen",sans-serif;;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.exclusive
+{
+  margin-left: 75px;
+}
+.executive
+{
+  margin-left: 20px;
+}
+
+</style>
+<%- include("partials/header.ejs") %>
+<body>
+<div class="container">
+  <h1 class="head">Hola! Amigos :&#41;</h1>
+  <form action="/submit" method="post">
+    <input class="blog exclusive" name="action" type="submit" value="Create Blog">
+    <input class="blog executive" name="action" type="submit" value="Way to Blogs">
+  </form>
+  <% if (typeof message !== 'undefined') { %>
+    <script>
+        alert('<%= message %>');
+    </script>
+<% } %>
+</div>
+</body>
+<%- include("partials/footer.ejs") %>

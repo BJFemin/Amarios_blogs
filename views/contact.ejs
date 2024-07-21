@@ -1,0 +1,64 @@
+<style>
+  .address
+  {
+  margin-top: 100px;
+  margin-left: 34%;
+  }
+  .tag
+  {
+    margin-left: 130px;
+    color: #3586ff;
+  }
+  h3
+  {
+    font-weight: 300 ;
+  }
+  .form
+  {
+    margin-top: 15px;
+  }
+  label
+  {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  #input1
+  {
+    height: 30px;
+    width: 200px;
+    outline: none;
+    padding: 4px;
+  }
+  #email
+  {
+    color: white;
+    background-color: #3586ff;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+</style>
+<%- include("partials/header.ejs") %>
+<body>
+<div >
+  <div class="address">
+  <h1 class="tag">Contact me</h1>
+  <h3>Name         : Femin B J</h3>
+  <h3>Email        : femin@gmail.com</h3>
+  <h3>Phone number : 8493547653</h3>
+  <form action="/send" method="post">
+  <label for="email">Let's Connect :
+  </label>
+  <br>
+  <div class="form">
+    <input id="input1" type="text" name="input1" placeholder="Enter your mail" >
+    <input type="submit" name="action" id="email">
+  </div>
+</form>
+</div>
+</div>
+</body>
+<%- include("partials/footer.ejs") %>
